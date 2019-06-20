@@ -1,6 +1,6 @@
 const electron = require('electron');
 const { shell, app, BrowserWindow } = electron;
-const HOMEPAGE = 'https://web.autocad.com/login'
+const HOMEPAGE = ' https://spark.adobe.com/sp/'
 
 let mainWindow;
 
