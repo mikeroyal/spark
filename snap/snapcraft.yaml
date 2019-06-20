@@ -1,12 +1,12 @@
-name: webcad
+name: spark
 version: '0.1'
-summary: WebCAD.
-description: | Desktop client for AutoCAd web.
+summary: Spark.
+description: | An unofficial Desktop client for Adobe Spark web app.
 confinement: strict
 grade: stable
 
 parts:
-  webcad:
+  spark:
     plugin: nodejs
     source: app/
 
@@ -32,8 +32,8 @@ parts:
       - -node_modules
 
 apps:
- webcad:
-    command: env TMPDIR=$XDG_RUNTIME_DIR desktop-launch $SNAP/app/webcad
+ spark:
+    command: env TMPDIR=$XDG_RUNTIME_DIR desktop-launch $SNAP/app/spark
     plugs:
       - home
       - x11
